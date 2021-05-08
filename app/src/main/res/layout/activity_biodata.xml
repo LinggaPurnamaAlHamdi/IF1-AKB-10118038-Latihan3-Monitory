@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_three"
+    tools:context=".Biodata">
+
+    <TextView
+        android:id="@+id/txtnamapanggilan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Nama Panggilan Kamu"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_bold"/>
+
+        <EditText
+            android:id="@+id/txteditnama"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/txtnamapanggilan"
+            android:hint="@string/nama"
+            android:textColorHint="@color/cool_grey"
+            android:backgroundTint="@color/cool_grey"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/txtumur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txteditnama"
+        android:text="Umur Kamu"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_bold"/>
+
+    <EditText
+        android:id="@+id/txteditumur"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/txtumur"
+        android:hint="@string/umur"
+        android:textColorHint="@color/cool_grey"
+        android:backgroundTint="@color/cool_grey"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+        <Button
+            android:id="@+id/btnselanjutnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selanjutnya"
+            android:textColor="@color/black"
+            android:background="@drawable/custombtn1"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="33dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="sayhai"/>
+
+</RelativeLayout>
